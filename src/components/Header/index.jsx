@@ -36,15 +36,15 @@ const StyledLink = styled(Link)`
   }
 `
 
-// const HeaderText = styled.h1`
-//   color: ${colors.mainText};
-// `
+const HeaderTitle = styled.h1`
+  visibility: hidden;
+`
 
 function Header() {
   return (
     <HeaderStyled>
       <StyledProfilePicture src={Logo} alt='Profile' />
-      {/* <HeaderText>Gaëtan Redoutez</HeaderText> */}
+      <HeaderTitle>Gaëtan Redoutez</HeaderTitle>
       <StyledNav>
         <StyledLink to='/'>Accueil</StyledLink>
         <StyledLink to='/resume'>À Propos</StyledLink>

@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import { colors } from "../../utils/style/colors"
-import InstagramLogo from "../../assets/images/social-network/insta.svg"
+// import InstagramLogo from "../../assets/images/social-network/insta.svg"
 import GmailLogo from "../../assets/images/social-network/gmail.svg"
 import LinkedInLogo from "../../assets/images/social-network/linkedin.svg"
 import GithubLogo from "../../assets/images/social-network/github.svg"
 
-const FooterStyled = styled.header`
+const FooterStyled = styled.footer`
   background-color: ${colors.headerBackground};
   bottom: 0;
   position: fixed;
@@ -29,7 +29,7 @@ const StyledNetwork = styled.div`
   justify-content: space-around;
 `
 
-function Header() {
+function Footer() {
   const formatTime = (value) => (value < 10 ? `0${value}` : value)
 
   // Obtenir la date et l'heure actuelles
@@ -43,7 +43,7 @@ function Header() {
 
   return (
     <FooterStyled>
-      <p>Mis à jour le :{` ${formattedDate} à ${formattedTime}`}</p>
+      <p>{` ${formattedDate} à ${formattedTime}`}</p>
       <StyledNetwork>
         <a
           href='https://www.linkedin.com/in/ga%C3%ABtan-redoutez-b090a317b/'
@@ -71,4 +71,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Footer

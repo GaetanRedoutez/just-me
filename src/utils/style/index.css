@@ -1,7 +1,13 @@
-body{
-    margin: 0;
-    font-family: 'Calibri', sans-serif;
-    min-height: 100vh;
-    position: relative;
-    /* overflow-x: hidden; */
+body {
+  margin: 0;
+  font-family: "Calibri", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

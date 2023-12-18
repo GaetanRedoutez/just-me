@@ -1,5 +1,6 @@
 export const educations = {
   1: {
+    id: 0,
     type: "Bac",
     name: "STI2D",
     qualificationLevel: "4",
@@ -9,6 +10,7 @@ export const educations = {
     date: "2016",
   },
   2: {
+    id: 1,
     type: "DUT",
     name: "GEII",
     qualificationLevel: "5",
@@ -18,6 +20,7 @@ export const educations = {
     date: "2016-2018",
   },
   3: {
+    id: 2,
     type: "Licence professionelle",
     name: "ARIA",
     qualificationLevel: "6",
@@ -26,13 +29,15 @@ export const educations = {
     specialization: "Automatique et Robotique Industrielles pour l'Assemblage",
     date: "2018-2019",
   },
-  3: {
+  4: {
+    id: 3,
     type: "Certification",
     name: "Développeur Web",
     qualificationLevel: "5",
     city: "Besançon",
     establishment: "OpenClassrooms",
-    specialization: "",
+    specialization:
+      "HTML - CSS - Javascript - React - Node.JS - Express - MongoDB",
     date: "09/2023-03/2024",
   },
 }
