@@ -1,0 +1,38 @@
+export const educations = {
+  1: {
+    type: "Bac",
+    name: "STI2D",
+    qualificationLevel: "4",
+    city: "Besançon",
+    establishment: "Lycée Victor Hugo",
+    specialization: "Énergie et environnement",
+    date: "2016",
+  },
+  2: {
+    type: "DUT",
+    name: "GEII",
+    qualificationLevel: "5",
+    city: "Belfort",
+    establishment: "IUT de Belfort-Montbéliard",
+    specialization: "Électricité et Informatique Industrielle",
+    date: "2016-2018",
+  },
+  3: {
+    type: "Licence professionelle",
+    name: "ARIA",
+    qualificationLevel: "6",
+    city: "Besançon",
+    establishment: "UFR Sciences et techniques",
+    specialization: "Automatique et Robotique Industrielles pour l'Assemblage",
+    date: "2018-2019",
+  },
+  3: {
+    type: "Certification",
+    name: "Développeur Web",
+    qualificationLevel: "5",
+    city: "Besançon",
+    establishment: "OpenClassrooms",
+    specialization: "",
+    date: "09/2023-03/2024",
+  },
+}
