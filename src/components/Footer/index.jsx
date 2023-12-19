@@ -7,14 +7,19 @@ import LinkedInLogo from "../../assets/images/social-network/linkedin.svg"
 import GithubLogo from "../../assets/images/social-network/github.svg"
 
 const FooterStyled = styled.footer`
-  background-color: ${colors.headerBackground};
+  background: linear-gradient(
+    ${colors.gradientColors},
+    ${colors.headerBackground}
+  );
   bottom: 0;
   position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 40px;
 `
 
 const StyledLogo = styled.img`
@@ -43,7 +48,7 @@ function Footer() {
 
   return (
     <FooterStyled>
-      <p>{` ${formattedDate} à ${formattedTime}`}</p>
+      <div>{` ${formattedDate} à ${formattedTime}`}</div>
       <StyledNetwork>
         <a
           href='https://www.linkedin.com/in/ga%C3%ABtan-redoutez-b090a317b/'

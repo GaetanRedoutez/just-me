@@ -1,14 +1,14 @@
 export const educations = {
-  1: {
-    id: 0,
-    type: "Bac",
-    name: "STI2D",
-    qualificationLevel: "4",
-    city: "Besançon",
-    establishment: "Lycée Victor Hugo",
-    specialization: "Énergie et environnement",
-    date: "2016",
-  },
+  // 1: {
+  //   id: 0,
+  //   type: "Bac",
+  //   name: "STI2D",
+  //   qualificationLevel: "4",
+  //   city: "Besançon",
+  //   establishment: "Lycée Victor Hugo",
+  //   specialization: "Énergie et environnement",
+  //   date: "2016",
+  // },
   2: {
     id: 1,
     type: "DUT",

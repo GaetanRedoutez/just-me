@@ -6,4 +6,5 @@ export const colors = {
   secondaryText: "#545454", // Medium Gray
   accent1: "#845EC2",
   accent2: "#4E6AB2",
+  gradientColors: "white",
 }

@@ -5,13 +5,17 @@ import { colors } from "../../utils/style/colors"
 import { Link } from "react-router-dom"
 
 const HeaderStyled = styled.header`
-  background-color: ${colors.headerBackground};
+  background: linear-gradient(
+    ${colors.headerBackground},
+    ${colors.gradientColors}
+  );
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 10px;
+  padding: 20px;
+  padding-bottom: 40px;
 `
 const StyledProfilePicture = styled.img`
   width: auto;
@@ -29,7 +33,8 @@ const StyledLink = styled(Link)`
   color: ${colors.mainText};
   text-decoration: none;
   margin: 0 15px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
   &:hover {
     color: ${colors.accent1};
     transition: color 0.3s ease-in-out;
@@ -47,7 +52,7 @@ function Header() {
       <HeaderTitle>Gaëtan Redoutez</HeaderTitle>
       <StyledNav>
         <StyledLink to='/'>Accueil</StyledLink>
-        <StyledLink to='/resume'>À Propos</StyledLink>
+        <StyledLink to='/resume'>Mon parcours</StyledLink>
         <StyledLink to='/contact'>Contact</StyledLink>
         <StyledLink to='/WIP'>WIP</StyledLink>
       </StyledNav>

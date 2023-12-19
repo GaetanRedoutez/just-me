@@ -1,13 +1,6 @@
 import styled from "styled-components"
-import { experiences } from "../../utils/data/experiences"
-import { colors } from "../../utils/style/colors"
-
-const ArticleTitle = styled.h3`
-  font-size: 22px;
-  font-weight: 700;
-  color: ${colors.accent1};
-  text-align: center;
-`
+import { experiences } from "../../../utils/data/experiences.js"
+import { colors } from "../../../utils/style/colors"
 
 const ListTitle = styled.h4`
   font-size: 18px;
@@ -22,8 +15,7 @@ function Experience() {
   const sortedexperiences = [...experiencesList].sort((a, b) => b.id - a.id)
 
   return (
-    <article>
-      <ArticleTitle>Mon experience</ArticleTitle>
+    <div>
       <ul>
         {sortedexperiences.map((experience) => (
           <li key={experience.id + Date.now()}>
@@ -35,7 +27,7 @@ function Experience() {
           </li>
         ))}
       </ul>
-    </article>
+    </div>
   )
 }
 
