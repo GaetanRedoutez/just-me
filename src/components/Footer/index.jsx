@@ -35,20 +35,25 @@ const StyledNetwork = styled.div`
 `
 
 function Footer() {
-  const formatTime = (value) => (value < 10 ? `0${value}` : value)
+  // const formatTime = (value) => (value < 10 ? `0${value}` : value)
 
-  // Obtenir la date et l'heure actuelles
-  const currentDate = new Date()
-  const formattedDate = `${currentDate.getDate()}/${
-    currentDate.getMonth() + 1
-  }/${currentDate.getFullYear()}`
-  const formattedTime = `${formatTime(currentDate.getHours())}:${formatTime(
-    currentDate.getMinutes()
-  )}`
+  // const currentDate = new Date()
+  // const formattedDate = `${currentDate.getDate()}/${
+  //   currentDate.getMonth() + 1
+  // }/${currentDate.getFullYear()}`
+  // const formattedTime = `${formatTime(currentDate.getHours())}:${formatTime(
+  //   currentDate.getMinutes()
+  // )}`
 
   return (
     <FooterStyled>
-      <div>{` ${formattedDate} à ${formattedTime}`}</div>
+      <div>
+        <img
+          src='https://api.netlify.com/api/v1/badges/ffa41727-0ee7-49b7-9530-6f04e8d5728e/deploy-status'
+          alt=''
+        />
+      </div>
+
       <StyledNetwork>
         <a
           href='https://www.linkedin.com/in/ga%C3%ABtan-redoutez-b090a317b/'
